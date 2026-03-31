@@ -1,4 +1,4 @@
-# The Kinetic Professional — Portfolio
+#  Portfolio
 
 Portfolio personal de Samuel Martínez. Desarrollado con React 19, TypeScript, Vite y Tailwind CSS 4.
 
