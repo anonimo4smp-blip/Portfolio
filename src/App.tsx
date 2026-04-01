@@ -90,20 +90,16 @@ export default function App() {
             Combinando la ingeniería técnica con la psicología de conversión.
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 pt-4">
-            <button className="w-full md:w-auto px-10 py-4 bg-[linear-gradient(135deg,#ff5f1f,#832700)] text-white font-bold rounded-full hover:shadow-[0_0_30px_rgba(255,95,31,0.4)] transition-all">
+            <a href="#projects" className="w-full md:w-auto px-10 py-4 bg-[linear-gradient(135deg,#ff5f1f,#832700)] text-white font-bold rounded-full hover:shadow-[0_0_30px_rgba(255,95,31,0.4)] transition-all text-center">
               Ver Proyectos
-            </button>
-            <button className="w-full md:w-auto px-10 py-4 border border-outline-variant/30 rounded-full hover:bg-surface-high transition-colors font-medium">
+            </a>
+            <a href="#services" className="w-full md:w-auto px-10 py-4 border border-outline-variant/30 rounded-full hover:bg-surface-high transition-colors font-medium text-center">
               Mis Servicios
-            </button>
+            </a>
           </div>
         </motion.div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
-          <span className="text-[10px] uppercase tracking-[0.3em] font-bold">Scroll</span>
-          <div className="w-px h-12 bg-gradient-to-b from-primary to-transparent" />
-        </div>
+
       </section>
 
       {/* Portfolio Section */}
