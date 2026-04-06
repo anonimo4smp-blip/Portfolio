@@ -28,10 +28,22 @@ export default function App() {
   const projects = [
     {
       id: 1,
+      title: "Bubble Tea España",
+      category: "Landing Page",
+      description: "Landing editorial para una guía de autor sobre bubble tea en España, con ciudades destacadas, jerarquía visual premium y CTAs orientados a exploración y ranking.",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB_QDsx6cbv7uYVuBzXgGtWC5VRpwLr6MEOqB6iFsF0tJ9brXx_sNt_Ht_Abus9XAmhfHk038WNKJzffFKr7P92DMkCK1rclHwq2UOC77BRyp0Pe3WJ_sQqvTKfDZCK8f-261KkrPhddtmP7YJCjiOH-Vvl89QFE7ooSEoTR7sZH3OHMUc8q_EbVR_j1f_yFcGmcPhrWbL9OLYsmSZw-keGDSgxktrSwUx11OkmsAC-zU0j_QxvHJ99t-blp2aH__Rdo4NfoXo6u_d9",
+      size: "large",
+      tags: ["LANDINGS"],
+      link: "https://bubble-tea-ebon.vercel.app/",
+      ctaLabel: "Ver Landing",
+      linkNote: "Referencia publicada en Vercel para Bubble Tea España, integrada como muestra de diseño editorial y conversión."
+    },
+    {
+      id: 2,
       title: "Price Tracker con Alertas en Tiempo Real",
       category: "Web Development",
       description: "Aplicación web que monitorea precios de productos y notifica al usuario cuando alcanzan el umbral deseado.",
-      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=1000",
+      image: "https://images.unsplash.com/photo-1642790106117-e829e14a795f?auto=format&fit=crop&q=80&w=1000",
       size: "large",
       tags: ["WEB DEV"],
       link: "https://atmospheric-analyst-price-tracker.vercel.app/",
@@ -157,7 +169,7 @@ export default function App() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-primary/40 text-primary text-xs font-bold hover:bg-primary/10 transition-all"
                       >
-                        Ver Vista Previa <ArrowRight className="w-3 h-3" />
+                        {project.ctaLabel ?? "Ver Vista Previa"} <ArrowRight className="w-3 h-3" />
                       </a>
                       {project.linkNote && (
                         <p className="text-on-surface/30 text-[11px] leading-relaxed">{project.linkNote}</p>
